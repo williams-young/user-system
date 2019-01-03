@@ -1,0 +1,15 @@
+{
+  "Statement": [
+    {
+      "Action": [
+        "oss:GetObject",
+        "oss:PutObject",
+        "oss:ListParts",
+        "oss:AbortMultipartUpload"
+      ],
+      "Effect": "Allow",
+      "Resource": ["acs:oss:*:*:$BUCKET_NAME/*", "acs:oss:*:*:$BUCKET_NAME"]
+    }
+  ],
+  "Version": "1"
+}
